@@ -25,7 +25,7 @@
 			
 			// append clues markup after puzzle wrapper div
 			// This should be moved into a configuration object
-			this.after('<div id="puzzle-clues"><h2>Across</h2><ol id="across"></ol><h2>Down</h2><ol id="down"></ol></div>');
+			this.after('<div id="puzzle-clues"><h2>ヨコの鍵</h2><ol id="across"></ol><h2>タテの鍵</h2><ol id="down"></ol></div>');
 			
 			// initialize some variables
 			var tbl = ['<table id="puzzle" class="crosswordtable">'],
@@ -64,6 +64,7 @@
 						
 						
 						// need to figure out orientation up front, before we attempt to highlight an entry
+						/*do I need it commented out? maybe no.*/
 						switch(e.which) {
 							case 39:
 							case 37:
@@ -80,6 +81,28 @@
 						if ( e.keyCode === 9) {
 							return false;
 						} else if (
+							/* on pressing consonant letters, stay the cell for Japanese input */
+							e.which === 66 ||
+							e.which === 67 ||
+							e.which === 68 ||
+							e.which === 70 ||
+							e.which === 71 ||
+							e.which === 72 ||
+							e.which === 74 ||
+							e.which === 75 ||
+							e.which === 76 ||
+							e.which === 77 ||
+							e.which === 78 ||
+							e.which === 80 ||
+							e.which === 81 ||
+							e.which === 82 ||
+							e.which === 83 ||
+							e.which === 84 ||
+							e.which === 86 ||
+							e.which === 87 ||
+							e.which === 88 ||
+							e.which === 89 ||
+							e.which === 90 ||
 							e.keyCode === 37 ||
 							e.keyCode === 38 ||
 							e.keyCode === 39 ||
@@ -91,6 +114,30 @@
 							
 							if (e.keyCode === 8 || e.keyCode === 46) {
 								currOri === 'across' ? nav.nextPrevNav(e, 37) : nav.nextPrevNav(e, 38); 
+							} else if (
+							/* on pressing consonant letters, stay the cell for Japanese input */
+							e.which === 66 ||
+							e.which === 67 ||
+							e.which === 68 ||
+							e.which === 70 ||
+							e.which === 71 ||
+							e.which === 72 ||
+							e.which === 74 ||
+							e.which === 75 ||
+							e.which === 76 ||
+							e.which === 77 ||
+							e.which === 78 ||
+							e.which === 80 ||
+							e.which === 81 ||
+							e.which === 82 ||
+							e.which === 83 ||
+							e.which === 84 ||
+							e.which === 86 ||
+							e.which === 87 ||
+							e.which === 88 ||
+							e.which === 89 ||
+							e.which === 90 ) {
+							return false;
 							} else {
 								nav.nextPrevNav(e);
 							}
@@ -215,7 +262,17 @@
 					for (var i=1; i <= rows; ++i) {
 						tbl.push("<tr>");
 							for (var x=1; x <= cols; ++x) {
-								tbl.push('<td data-coords="' + x + ',' + i + '"></td>');		
+							        if ((x == 1 && i == 1) ||
+								    (x == 2 && i == 2) ||
+								    (x == 5 && i == 2) ||
+								    (x == 7 && i == 2) ||
+								    (x == 4 && i == 3) ||
+								    (x == 3 && i == 6)
+								   ) {
+								tbl.push('<td data-coords="' + x + ',' + i + '" id="pickup"></td>');
+								} else {
+								tbl.push('<td data-coords="' + x + ',' + i + '"></td>');
+								}
 							};
 						tbl.push("</tr>");
 					};
@@ -339,6 +396,7 @@
 					//console.log('nextPrevNav activePosition & struck: '+ activePosition + ' '+struck);
 						
 					// move input focus/select to 'next' input
+					/* do I need it commented out? maybe no*/
 					switch(struck) {
 						case 39:
 							p
