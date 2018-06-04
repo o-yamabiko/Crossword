@@ -1,12 +1,15 @@
 $crossword-item-size: 50px;
-$crossword-column-count: 7;
-$crossword-row-count: 7;
+$crossword-column-count: 8;
+$crossword-row-count: 9;
 
 $color-valid-item: #9AFF67;
 $color-focus-item: rgba(255,255,116,0.5);
 
 #item1-1,#item2-2,#item2-5,#item2-7,#item3-4,#item6-3 {
         background-color:rgba(250,116,188,0.5);
+}
+#item9-1,#item9-2,#item9-3,#item9-4,#item9-6,#item9-7 {
+        background-color:rgba(250,116,188,0.2);
 }
 
 .crossword-board-container {
@@ -18,11 +21,11 @@ $color-focus-item: rgba(255,255,116,0.5);
 	position: absolute;
 	z-index: 1;
 	background: transparent;
-	border: 1px solid #000000;
+	border: 0;
 	width: ($crossword-item-size * $crossword-column-count);
 	height: ($crossword-item-size * $crossword-row-count);
 	display: grid;
-	grid-template: repeat(7,14.2857143%) / repeat(7,14.2857143%);
+	grid-template: repeat(9,11.11111111%) / repeat(8,12.5%);
 	list-style-type: none;
 	padding: 0;
 	margin: 0 auto;
@@ -48,6 +51,17 @@ $color-focus-item: rgba(255,255,116,0.5);
 	background: #000000;
 	border: 1px solid #000000;
 	outline: 1px solid #000000;
+}
+.crossword-board__item--blank2 {
+	background: transparent;
+	position: relative;
+	top:15px;
+	z-index: 100;
+	text-align: center;
+	font-size: 20px;
+	font-weight: bold;
+	border: 0px;
+	outline: 0px;
 }
 
 .crossword-board--labels {
@@ -188,6 +202,14 @@ $color-focus-item: rgba(255,255,116,0.5);
 	grid-column: 3/7;
 	grid-row: 7;
 }
+.crossword-board__item-highlight--across-20 {
+	grid-column: 1/5;
+	grid-row: 9;
+}
+.crossword-board__item-highlight--across-21 {
+	grid-column: 6/8;
+	grid-row: 9;
+}
 
 
 #item1-1:valid ~ #item1-2:valid
@@ -237,6 +259,16 @@ $color-focus-item: rgba(255,255,116,0.5);
 
 #item7-3:valid ~ #item7-4:valid ~ #item7-5:valid ~ #item7-6:valid
 ~ .crossword-board--highlight .crossword-board__item-highlight--across-19 {
+	opacity: 1;
+}
+
+#item9-1:valid ~ #item9-2:valid ~ #item9-3:valid ~ #item9-4:valid
+~ .crossword-board--highlight .crossword-board__item-highlight--across-20 {
+	opacity: 1;
+}
+
+#item9-6:valid ~ #item9-7:valid
+~ .crossword-board--highlight .crossword-board__item-highlight--across-21 {
 	opacity: 1;
 }
 
@@ -522,6 +554,40 @@ $color-focus-item: rgba(255,255,116,0.5);
 }
 
 
+#item9-1:active ~ .crossword-clues .crossword-clues__list-item--across-20,
+#item9-1:focus ~ .crossword-clues .crossword-clues__list-item--across-20,
+#item9-1:hover ~ .crossword-clues .crossword-clues__list-item--across-20 {
+	background: $color-focus-item;
+}
+#item9-2:active ~ .crossword-clues .crossword-clues__list-item--across-20,
+#item9-2:focus ~ .crossword-clues .crossword-clues__list-item--across-20,
+#item9-2:hover ~ .crossword-clues .crossword-clues__list-item--across-20 {
+	background: $color-focus-item;
+}
+#item9-3:active ~ .crossword-clues .crossword-clues__list-item--across-20,
+#item9-3:focus ~ .crossword-clues .crossword-clues__list-item--across-20,
+#item9-3:hover ~ .crossword-clues .crossword-clues__list-item--across-20 {
+	background: $color-focus-item;
+}
+#item9-4:active ~ .crossword-clues .crossword-clues__list-item--across-20,
+#item9-4:focus ~ .crossword-clues .crossword-clues__list-item--across-20,
+#item9-4:hover ~ .crossword-clues .crossword-clues__list-item--across-20 {
+	background: $color-focus-item;
+}
+
+
+#item9-6:active ~ .crossword-clues .crossword-clues__list-item--across-21,
+#item9-6:focus ~ .crossword-clues .crossword-clues__list-item--across-21,
+#item9-6:hover ~ .crossword-clues .crossword-clues__list-item--across-21 {
+	background: $color-focus-item;
+}
+#item9-7:active ~ .crossword-clues .crossword-clues__list-item--across-21,
+#item9-7:focus ~ .crossword-clues .crossword-clues__list-item--across-21,
+#item9-7:hover ~ .crossword-clues .crossword-clues__list-item--across-21 {
+	background: $color-focus-item;
+}
+
+
 
 
 #item1-2:active ~ .crossword-clues .crossword-clues__list-item--down-2,
@@ -717,6 +783,16 @@ $color-focus-item: rgba(255,255,116,0.5);
 
 #item7-3:valid ~ #item7-4:valid ~ #item7-5:valid ~ #item7-6:valid
 ~ .crossword-clues .crossword-clues__list-item--across-19 {
+	background: $color-valid-item;
+}
+
+#item9-1:valid ~ #item9-2:valid ~ #item9-3:valid ~ #item9-4:valid
+~ .crossword-clues .crossword-clues__list-item--across-20 {
+	background: $color-valid-item;
+}
+
+#item9-6:valid ~ #item9-7:valid
+~ .crossword-clues .crossword-clues__list-item--across-21 {
 	background: $color-valid-item;
 }
 
