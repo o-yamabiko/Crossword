@@ -34,7 +34,7 @@ Default puzzle styling
 }
 
 .crosswordtable td input:focus {
-    background-color: rgba(255, 255, 255, 1);
+    background-color: rgba(255, 255, 255, 0.7);
 }
 
 .crosswordtable td span {
@@ -52,7 +52,7 @@ input.done {
 
 .active,
 .clues-active {
-    background-color: rgba(187, 187, 221, 0.7);
+    background-color: rgba(187, 187, 221, 0.5);
 }
 .clue-done {
     color: #999;
