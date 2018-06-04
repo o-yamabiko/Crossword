@@ -924,7 +924,8 @@
 #item4-1:valid ~ #item4-2:valid ~ #item4-4:valid ~ #item4-6:valid ~
 #item5-3:valid ~ #item5-5:valid ~ #item5-6:valid ~ #item5-7:valid ~
 #item6-2:valid ~ #item6-3:valid ~ #item6-4:valid ~ #item6-6:valid ~ #item6-7:valid ~
-#item7-1:valid ~ #item7-3:valid ~ #item7-4:valid ~ #item7-5:valid ~ #item7-6:valid ~ .crossword-complete {
+#item7-1:valid ~ #item7-3:valid ~ #item7-4:valid ~ #item7-5:valid ~ #item7-6:valid ~
+#item9-1:valid ~ #item9-2:valid ~ #item9-3:valid ~ #item9-4:valid ~ #item9-6:valid ~ #item9-7:valid ~ .crossword-complete {
   opacity: 1;
 }
 
