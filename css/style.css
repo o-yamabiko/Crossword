@@ -6,6 +6,10 @@
   background-color: rgba(250, 116, 188, 0.2);
 }
 
+.crossword-intro {
+  margin-bottom: 2em;
+}
+
 .crossword-board-container {
   position: relative;
   background: #FFFFFF;
