@@ -52,7 +52,7 @@ input.done {
 
 .active,
 .clues-active {
-    background-color: rgba(187, 187, 221, 1);
+    background-color: rgba(187, 187, 221, 0.7);
 }
 .clue-done {
     color: #999;
