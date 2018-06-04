@@ -82,6 +82,7 @@
 							return false;
 						} else if (
 							/* on pressing consonant letters, stay the cell for Japanese input */
+							!(e.value.charCodeAt(0) === 12356) ||
 							e.which === 66 ||
 							e.which === 67 ||
 							e.which === 68 ||
@@ -116,6 +117,7 @@
 								currOri === 'across' ? nav.nextPrevNav(e, 37) : nav.nextPrevNav(e, 38); 
 							} else if (
 							/* on pressing consonant letters, stay the cell for Japanese input */
+							!(e.value.charCodeAt(0) === 12356) ||
 							e.which === 66 ||
 							e.which === 67 ||
 							e.which === 68 ||
@@ -137,8 +139,9 @@
 							e.which === 88 ||
 							e.which === 89 ||
 							e.which === 90 ) {
-							return false;
+							        return false;
 							} else {
+							        return false;
 								nav.nextPrevNav(e);
 							}
 							
@@ -362,6 +365,7 @@
 						return;
 					}
 					
+					/* prevent auto focusing on the next cell ? */
 					currOri === 'across' ? nav.nextPrevNav(e, 39) : nav.nextPrevNav(e, 40);
 					
 					//z++;
