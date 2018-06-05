@@ -8,10 +8,6 @@
   background-color: rgba(250, 116, 188, 0.2);
 }
 
-.crossword-intro {
-  margin-bottom: 2em;
-}
-
 .crossword-board-container {
   position: relative;
   background: #FFFFFF;
@@ -955,6 +951,17 @@
         }
 }
 
+.container {
+width: 500px;
+margin-left:2rem;
+margin-right:2rem;
+}
+
+.crossword-intro {
+  width: 280px;
+  margin-bottom: 2em;
+}
+
 //arrange images
       .gyo {
         height: 1em;
@@ -1013,9 +1020,4 @@
         clear: both;
       }
 
-.container {
-width: 280px;
-margin-left:2rem;
-margin-right:2rem;
-}
 

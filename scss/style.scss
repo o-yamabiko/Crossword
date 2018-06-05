@@ -14,10 +14,6 @@ $color-focus-item: rgba(255,255,116,0.5);
         background-color:rgba(250,116,188,0.2);
 }
 
-.crossword-intro {
-  margin-bottom: 2em;
-}
-
 .crossword-board-container {
 	position: relative;
 	background: #FFFFFF;
@@ -905,6 +901,18 @@ $color-focus-item: rgba(255,255,116,0.5);
         }
 }
 
+
+.container {
+width: 500px;
+margin-left:2rem;
+margin-right:2rem;
+}
+
+.crossword-intro {
+  width: 280px;
+  margin-bottom: 2em;
+}
+
 //arrange images
       .gyo {
         height: 1em;
@@ -963,10 +971,4 @@ $color-focus-item: rgba(255,255,116,0.5);
         clear: both;
       }
 
-
-.container {
-width: 280px;
-margin-left:2rem;
-margin-right:2rem;
-}
 
