@@ -64,7 +64,7 @@
 						
 						
 						// need to figure out orientation up front, before we attempt to highlight an entry
-						/*do I need it commented out? maybe no.*/
+						/*do I need it commented out? maybe no.
 						switch(e.keyCode) {
 							case 39:
 							case 37:
@@ -77,7 +77,7 @@
 							default:
 								break;
 						}
-						
+					*/	
 						if ( e.keyCode === 9) {
 							return false;
 						} else if (
@@ -396,7 +396,7 @@
 					//console.log('nextPrevNav activePosition & struck: '+ activePosition + ' '+struck);
 						
 					// move input focus/select to 'next' input
-					/* do I need it commented out? maybe no*/
+					/* do I need it commented out? maybe no
 					switch(struck) {
 						case 39:
 							p
@@ -437,7 +437,7 @@
 						default:
 						break;
 					}
-															
+				*/											
 				},
 	
 				updateByNav: function(e) {
