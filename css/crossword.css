@@ -18,7 +18,7 @@ Default puzzle styling
     border: 1px solid #333;
     padding: 0;
     margin: 0;
-    background-color: rgba(200, 200, 200, 1);
+    background-color: rgba(220, 220, 220, 1);
     position: relative;
     border-radius: 0px;
 }
@@ -31,12 +31,12 @@ Default puzzle styling
     text-align: center !important;
     font-size: 2em !important;
     color: #666 !important;
-    background-color: rgba(244, 244, 244, 0.7);
+    background-color: rgba(244, 244, 244, 0.8);
     margin-bottom: 0px !important;
 }
 
 .crosswordtable td input:focus {
-    background-color: rgba(255, 255, 255, 0.7);
+    background-color: rgba(255, 255, 255, 0.8);
 }
 
 .crosswordtable td span {
@@ -54,7 +54,7 @@ input.done {
 
 .active,
 .clues-active {
-    background-color: rgba(187, 187, 221, 0.5);
+    background-color: rgba(187, 187, 221, 0.3);
 }
 .clue-done {
     color: #999;
@@ -95,13 +95,21 @@ li.nonumber {
 }
 
 #pickup {
-    background-color:  rgba(154, 255, 53, 1) !important;
+    background-color:  rgba(255, 86, 173, 1) !important;
+}
+
+.keyword {
+    font-size: 2em;
+    font-weight: bold;
+    position: absolute;
+    top: 30em;
+    left: 2em;
 }
 
 }
 
 @supports (not (-ms-ime-align:auto)) { 
-#puzzle-wrapper,#puzzle-clues {
+#puzzle-wrapper,#puzzle-clues,.keyword {
         display: none;
         }
 }
