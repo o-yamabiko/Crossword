@@ -18,7 +18,7 @@ Default puzzle styling
     border: 1px solid #333;
     padding: 0;
     margin: 0;
-    background-color: rgba(220, 220, 220, 1);
+    background-color: rgba(150, 150, 150, 1);
     position: relative;
     border-radius: 0px;
 }
@@ -31,7 +31,7 @@ Default puzzle styling
     text-align: center !important;
     font-size: 2em !important;
     color: #666 !important;
-    background-color: rgba(244, 244, 244, 0.8);
+    background-color: rgba(244, 244, 244, 0.8) !important;
     margin-bottom: 0px !important;
 }
 
@@ -102,9 +102,10 @@ li.nonumber {
     font-size: 2em;
     font-weight: bold;
     position: absolute;
-    top: 30em;
+    top: 18em;
     left: 2em;
 }
+
 
 }
 
