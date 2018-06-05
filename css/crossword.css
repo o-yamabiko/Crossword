@@ -99,9 +99,9 @@ li.nonumber {
 }
 
 .attention {
-    font-size: 1em;
+    font-size: 1.5em;
     position: absolute;
-    top: 25rem;
+    top: 20rem;
     left: 1rem;
 }
 
@@ -109,7 +109,7 @@ li.nonumber {
     font-size: 2em;
     font-weight: bold;
     position: absolute;
-    top: 30rem;
+    top: 25rem;
     left: 2rem;
 }
 
