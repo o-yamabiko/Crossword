@@ -101,17 +101,11 @@ li.nonumber {
 .attention {
     font-size: 1.2em;
     line-height: 1.6em;
-    position: absolute;
-    top: 20rem;
-    left: 1rem;
 }
 
 .keyword {
     font-size: 2em;
     font-weight: bold;
-    position: absolute;
-    top: 25rem;
-    left: 2rem;
 }
 
 
