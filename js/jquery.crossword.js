@@ -139,7 +139,9 @@
 							e.keyCode === 90 ) {
 							return false;
 							} else {
-								nav.nextPrevNav(e);
+							/*disable nav
+								nav.nextPrevNav(e);*/
+								return false;
 							}
 							
 							e.preventDefault();
