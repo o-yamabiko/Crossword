@@ -101,16 +101,16 @@ li.nonumber {
 .attention {
     font-size: 1em;
     position: absolute;
-    top: 15em;
-    left: 1em;
+    top: 25rem;
+    left: 1rem;
 }
 
 .keyword {
     font-size: 2em;
     font-weight: bold;
     position: absolute;
-    top: 18em;
-    left: 2em;
+    top: 30rem;
+    left: 2rem;
 }
 
 
