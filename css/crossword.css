@@ -99,12 +99,12 @@ li.nonumber {
 }
 
 .attention {
-    font-size: 1.2em;
+    font-size: 0.8em;
     line-height: 1.6em;
 }
 
 .keyword {
-    font-size: 2em;
+    font-size: 1.5em;
     font-weight: bold;
 }
 
