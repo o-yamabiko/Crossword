@@ -5,6 +5,8 @@ $crossword-row-count: 9;
 $color-valid-item: #9AFF67;
 $color-focus-item: rgba(255,255,116,0.5);
 
+@supports (not (-ms-ime-align:auto)) {
+
 #item1-1,#item2-2,#item2-5,#item2-7,#item3-4,#item6-3 {
         background-color:rgba(250,116,188,0.5);
 }
@@ -893,4 +895,12 @@ $color-focus-item: rgba(255,255,116,0.5);
 	display: inline-block;
 	background: $color-valid-item;
 	cursor: pointer;
+}
+
+}
+
+@supports (-ms-ime-align:auto) { 
+.crossword-board-container {
+        display: none;
+        }
 }

@@ -1,3 +1,5 @@
+@supports (not (-ms-ime-align:auto)) {
+
 #item1-1, #item2-2, #item2-5, #item2-7, #item3-4, #item6-3 {
   background-color: rgba(250, 116, 188, 0.5);
 }
@@ -945,3 +947,10 @@
   cursor: pointer;
 }
 
+}
+
+@supports (-ms-ime-align:auto) { 
+.crossword-board-container {
+        display: none;
+        }
+}

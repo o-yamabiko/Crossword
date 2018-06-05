@@ -1,12 +1,20 @@
 <!DOCTYPE html>
-<html lang="en" >
+<!--[if lt IE 7]> <html class="no-js ie6 oldie" lang="en"> <![endif]-->
+<!--[if IE 7]>    <html class="no-js ie7 oldie" lang="en"> <![endif]-->
+<!--[if IE 8]>    <html class="no-js ie8 oldie" lang="en"> <![endif]-->
+<!--[if gt IE 8]><!--> <html class="no-js" lang="en"> <!--<![endif]-->
 
 <head>
   <meta charset="UTF-8">
   <meta name="robots" content="noindex">
   <meta http-equiv="X-UA-Compatible" content="IE=edge">
   <meta name="viewport" content="width=device-width, initial-scale=1">
-  <title>Pure CSS crossword - CSS Grid</title>
+  <title>やまびこ通信2018年6月号 Let's Try!!</title>
+	<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.1.1/jquery.min.js"></script>
+	<script src="js/jquery.crossword.js"></script>
+	<script src="js/crossword.js"></script>
+
+	<link type="text/css" rel="stylesheet" href="css/crossword.css">
   
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/normalize/5.0.0/normalize.min.css">
 
@@ -21,6 +29,7 @@
 <div class="crossword-intro">ピンクのマス目の文字を並べ替え、今の季節を表す下の文を完成させてください。</div>
   <!--input type="checkbox" name="checkvaliditems" id="checkvaliditems" />
 <label for="checkvaliditems">Check for valid squares</label-->
+<div id="puzzle-wrapper"><!-- crossword puzzle appended here --></div>
 
 <div class="crossword-board-container">
 
