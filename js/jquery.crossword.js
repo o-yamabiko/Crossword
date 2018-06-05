@@ -65,7 +65,7 @@
 						
 						// need to figure out orientation up front, before we attempt to highlight an entry
 						/*do I need it commented out? maybe no.*/
-						switch(e.which) {
+						switch(e.keyCode) {
 							case 39:
 							case 37:
 								currOri = 'across';
@@ -82,27 +82,27 @@
 							return false;
 						} else if (
 							/* on pressing consonant letters, stay the cell for Japanese input */
-							e.which === 66 ||
-							e.which === 67 ||
-							e.which === 68 ||
-							e.which === 70 ||
-							e.which === 71 ||
-							e.which === 72 ||
-							e.which === 74 ||
-							e.which === 75 ||
-							e.which === 76 ||
-							e.which === 77 ||
-							e.which === 78 ||
-							e.which === 80 ||
-							e.which === 81 ||
-							e.which === 82 ||
-							e.which === 83 ||
-							e.which === 84 ||
-							e.which === 86 ||
-							e.which === 87 ||
-							e.which === 88 ||
-							e.which === 89 ||
-							e.which === 90 ||
+							e.keyCode === 66 ||
+							e.keyCode === 67 ||
+							e.keyCode === 68 ||
+							e.keyCode === 70 ||
+							e.keyCode === 71 ||
+							e.keyCode === 72 ||
+							e.keyCode === 74 ||
+							e.keyCode === 75 ||
+							e.keyCode === 76 ||
+							e.keyCode === 77 ||
+							e.keyCode === 78 ||
+							e.keyCode === 80 ||
+							e.keyCode === 81 ||
+							e.keyCode === 82 ||
+							e.keyCode === 83 ||
+							e.keyCode === 84 ||
+							e.keyCode === 86 ||
+							e.keyCode === 87 ||
+							e.keyCode === 88 ||
+							e.keyCode === 89 ||
+							e.keyCode === 90 ||
 							e.keyCode === 37 ||
 							e.keyCode === 38 ||
 							e.keyCode === 39 ||
@@ -116,27 +116,27 @@
 								currOri === 'across' ? nav.nextPrevNav(e, 37) : nav.nextPrevNav(e, 38); 
 							} else if (
 							/* on pressing consonant letters, stay the cell for Japanese input */
-							e.which === 66 ||
-							e.which === 67 ||
-							e.which === 68 ||
-							e.which === 70 ||
-							e.which === 71 ||
-							e.which === 72 ||
-							e.which === 74 ||
-							e.which === 75 ||
-							e.which === 76 ||
-							e.which === 77 ||
-							e.which === 78 ||
-							e.which === 80 ||
-							e.which === 81 ||
-							e.which === 82 ||
-							e.which === 83 ||
-							e.which === 84 ||
-							e.which === 86 ||
-							e.which === 87 ||
-							e.which === 88 ||
-							e.which === 89 ||
-							e.which === 90 ) {
+							e.keyCode === 66 ||
+							e.keyCode === 67 ||
+							e.keyCode === 68 ||
+							e.keyCode === 70 ||
+							e.keyCode === 71 ||
+							e.keyCode === 72 ||
+							e.keyCode === 74 ||
+							e.keyCode === 75 ||
+							e.keyCode === 76 ||
+							e.keyCode === 77 ||
+							e.keyCode === 78 ||
+							e.keyCode === 80 ||
+							e.keyCode === 81 ||
+							e.keyCode === 82 ||
+							e.keyCode === 83 ||
+							e.keyCode === 84 ||
+							e.keyCode === 86 ||
+							e.keyCode === 87 ||
+							e.keyCode === 88 ||
+							e.keyCode === 89 ||
+							e.keyCode === 90 ) {
 							return false;
 							} else {
 								nav.nextPrevNav(e);
@@ -379,7 +379,7 @@
 				nextPrevNav: function(e, override) {
 
 					var len = $actives.length,
-						struck = override ? override : e.which,
+						struck = override ? override : e.keyCode,
 						el = $(e.target),
 						p = el.parent(),
 						ps = el.parents(),

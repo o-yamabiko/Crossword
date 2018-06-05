@@ -143,7 +143,7 @@
 				},
 				{
 					clue: "<u>素っ気</u>ない態度",
-					answer: "そっけ",
+					answer: "そつけ",
 					position: 12,
 					orientation: "down",
 					startx: 3,
