@@ -364,7 +364,7 @@
 						return;
 					}
 					
-					currOri === 'across' ? nav.nextPrevNav(e, 39) : nav.nextPrevNav(e, 40);
+				//	currOri === 'across' ? nav.nextPrevNav(e, 39) : nav.nextPrevNav(e, 40);
 					
 					//z++;
 					//console.log(z);
