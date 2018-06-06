@@ -72,10 +72,10 @@ input.done {
 }
 #puzzle-clues {
     position: absolute;
-    top:14rem;
+    top:8rem;
     left:22rem;
     width:50%;
-    font: 62.5%/1.3em Helvetica, sans-serif;
+    font: 90%/1.3em Helvetica, sans-serif;
     margin: 10px auto;
 
     float: left;

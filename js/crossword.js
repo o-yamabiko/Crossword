@@ -6,7 +6,7 @@
 		// two entries: an across entry and a down entry
 		var puzzleData = [
 			 	{
-					clue: "<u>厳</u>めしい老紳士",
+					clue: "_厳_めしい老紳士",
 					answer: "いか",
 					position: 1,
 					orientation: "across",
@@ -14,7 +14,7 @@
 					starty: 1
 				},
 			 	{
-					clue: "水面に<u>揺蕩</u>う船",
+					clue: "水面に_揺蕩_う船",
 					answer: "たゆた",
 					position: 3,
 					orientation: "across",
@@ -22,7 +22,7 @@
 					starty: 1
 				},
 				{
-					clue: "<u>所縁</u>の地を巡る",
+					clue: "_所縁_の地を巡る",
 					answer: "ゆかり",
 					position: 6,
 					orientation: "across",
@@ -30,7 +30,7 @@
 					starty: 2
 				},
 				{
-					clue: "<u>夥</u>しい数",
+					clue: "_夥_しい数",
 					answer: "おびただ",
 					position: 8,
 					orientation: "across",
@@ -38,7 +38,7 @@
 					starty: 3
 				},
 				{
-					clue: "両手を<u>擦</u>り合わせる",
+					clue: "両手を_擦_り合わせる",
 					answer: "こす",
 					position: 10,
 					orientation: "across",	
@@ -46,7 +46,7 @@
 					starty: 4
 				},
 				{
-					clue: "耳を<u>欹</u>てる",
+					clue: "耳を_欹_てる",
 					answer: "そばだ",
 					position: 13,
 					orientation: "across",
@@ -54,7 +54,7 @@
 					starty: 5
 				},
 				{
-					clue: "<u>咄嗟</u>の出来事",
+					clue: "_咄嗟_の出来事",
 					answer: "とっさ",
 					position: 15,
 					orientation: "across",
@@ -62,7 +62,7 @@
 					starty: 6
 				},
 				{
-					clue: "<u>歯朶</u>の葉に積む雪落ちんとして落ちず(山口誓子)",
+					clue: "_歯朶_の葉に積む雪落ちんとして落ちず(山口誓子)",
 					answer: "しだ",
 					position: 17,
 					orientation: "across",
@@ -70,7 +70,7 @@
 					starty: 6
 				},
 				{
-					clue: "退屈な毎日に<u>倦</u>む",
+					clue: "退屈な毎日に_倦_む",
 					answer: "う",
 					position: 18,
 					orientation: "across",
@@ -78,7 +78,7 @@
 					starty: 7
 				},
 				{
-					clue: "<u>毳毳</u>しい服装",
+					clue: "_毳毳_しい服装",
 					answer: "けばけば",
 					position: 19,
 					orientation: "across",
@@ -86,7 +86,7 @@
 					starty: 7
 				},
 				{
-					clue: "<u>囂</u>しい人々",
+					clue: "_囂_しい人々",
 					answer: "かまびす",
 					position: 2,
 					orientation: "down",
@@ -94,7 +94,7 @@
 					starty: 1
 				},
 				{
-					clue: "<u>由々</u>しき大事件",
+					clue: "_由々_しき大事件",
 					answer: "ゆゆ",
 					position: 4,
 					orientation: "down",
@@ -102,7 +102,7 @@
 					starty: 1
 				},
 				{
-					clue: "外灯に虫が<u>集</u>る",
+					clue: "外灯に虫が_集_る",
 					answer: "たか",
 					position: 5,
 					orientation: "down",
@@ -110,7 +110,7 @@
 					starty: 1
 				},
 				{
-					clue: "<u>凛々</u>しい いでたち",
+					clue: "_凛々_しい いでたち",
 					answer: "りり",
 					position: 7,
 					orientation: "down",
@@ -118,7 +118,7 @@
 					starty: 2
 				},
 				{
-					clue: "代表で話すなんて<u>烏滸</u>がましい",
+					clue: "代表で話すなんて_烏滸_がましい",
 					answer: "おこ",
 					position: 8,
 					orientation: "down",
@@ -126,7 +126,7 @@
 					starty: 3
 				},
 				{
-					clue: "熱があって<u>怠</u>い",
+					clue: "熱があって_怠_い",
 					answer: "だる",
 					position: 9,
 					orientation: "down",
@@ -134,7 +134,7 @@
 					starty: 3
 				},
 				{
-					clue: "店に<u>屡</u>やってくる客",
+					clue: "店に_屡_やってくる客",
 					answer: "しばしば",
 					position: 11,
 					orientation: "down",
@@ -142,7 +142,7 @@
 					starty: 4
 				},
 				{
-					clue: "<u>素っ気</u>ない態度",
+					clue: "_素っ気_ない態度",
 					answer: "そつけ",
 					position: 12,
 					orientation: "down",
@@ -150,7 +150,7 @@
 					starty: 5
 				},
 				{
-					clue: "小さい子のように<u>駄々</u>をこねる",
+					clue: "小さい子のように_駄々_をこねる",
 					answer: "だだ",
 					position: 14,
 					orientation: "down",
@@ -158,7 +158,7 @@
 					starty: 5
 				},
 				{
-					clue: "あっさり<u>捌</u>けた人",
+					clue: "あっさり_捌_けた人",
 					answer: "さば",
 					position: 16,
 					orientation: "down",
