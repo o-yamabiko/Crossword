@@ -71,6 +71,10 @@ input.done {
     margin-left: 10px !important;
 }
 #puzzle-clues {
+    position: absolute;
+    top:8rem;
+    left:22rem;
+    width:50%;
     font: 62.5%/1.3em Helvetica, sans-serif;
     margin: 10px auto;
 
