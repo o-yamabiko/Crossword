@@ -25,7 +25,7 @@
 			
 			// append clues markup after puzzle wrapper div
 			// This should be moved into a configuration object
-			this.after('<div id="puzzle-clues"><h2>ヨコの鍵</h2><ol id="across"></ol><h2>タテの鍵</h2><ol id="down"></ol></div>');
+			this.after('<div id="puzzle-clues"><div style="position:absolute;left:0;top:0;width:50%;"><h2>ヨコの鍵</h2><ol id="across"></ol></div><div style="position:absolute;right:0;top:0;width:50%;"><h2>タテの鍵</h2><ol id="down"></ol></div></div>');
 			
 			// initialize some variables
 			var tbl = ['<table id="puzzle" class="crosswordtable">'],
